@@ -2,6 +2,7 @@ let randomNumber = Math.floor(Math.random()*100)+1;
 let guesses = document.querySelector('.guesses');
 let lastResult = document.querySelector('.lastResult');
 let lowOrHi = document.querySelector('.lowOrHi');
+let guessNumber = document.querySelector('.guessNumber');
 
 let guessSubmit = document.querySelector('.guessSubmit');
 let guessField = document.querySelector('.guessField');
@@ -20,6 +21,8 @@ function checkGuess(){
       lastResult.textContent = 'Bravo, vous avez trouvé le nombre !';
       lastResult.style.backgroundColor = 'green';
       lowOrHi.textContent = '';
+      guessCount++
+      guessNumber.textContent = 'Vous avez deviné en '+ guessCount +' coups';
       setGameOver();
     } else if (guessCount === 10) {
        lastResult.textContent = '!!! PERDU !!!';
