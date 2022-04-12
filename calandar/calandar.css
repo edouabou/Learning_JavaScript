@@ -1,0 +1,15 @@
+.input-group {
+    width: 30%;
+}
+.input-group-text {
+    font-weight: bold;
+}
+
+p {
+    background-color: rgb(81, 193, 230);
+    border: 1px solid;
+    width: 200px;
+    height: 40px;
+    margin-right: 2px;
+    text-align: center
+}
